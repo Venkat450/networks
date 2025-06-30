@@ -1,0 +1,32 @@
+[2025-06-30 14:16:34,320] 18 root - INFO - Starting Data Ingestion Pipeline
+[2025-06-30 14:16:34,320] 97 root - INFO - Starting data ingestion process
+[2025-06-30 14:16:34,320] 36 root - INFO - Exporting collection to DataFrame
+[2025-06-30 14:16:36,096] 99 root - INFO - Data exported from MongoDB collection successfully
+[2025-06-30 14:16:36,258] 64 root - INFO - Data exported to feature store at Artifacts\2025-06-30-14-16-29\data_ingestion\feature_store\phisingData.csv
+[2025-06-30 14:16:36,258] 101 root - INFO - Data exported to feature store successfully
+[2025-06-30 14:16:36,261] 80 root - INFO - Performed train-test split on the DataFrame
+[2025-06-30 14:16:36,272] 82 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[2025-06-30 14:16:36,274] 86 root - INFO - Exporting train and test file paths
+[2025-06-30 14:16:36,340] 89 root - INFO - Train and test data exported to Artifacts\2025-06-30-14-16-29\data_ingestion\ingested\train.csv and Artifacts\2025-06-30-14-16-29\data_ingestion\ingested\test.csv
+[2025-06-30 14:16:36,340] 103 root - INFO - Data split into training and testing sets successfully
+[2025-06-30 14:16:36,340] 20 root - INFO - Data Ingestion Artifact Created Successfully
+[2025-06-30 14:16:36,346] 26 root - INFO - Starting Data Validation Pipeline
+[2025-06-30 14:16:36,349] 27 root - INFO - Data Ingestion Pipeline Completed Successfully
+[2025-06-30 14:16:36,349] 92 root - INFO - Starting data validation
+[2025-06-30 14:16:36,372] 99 root - INFO - Data loaded successfully for validation
+[2025-06-30 14:16:36,372] 39 root - INFO - Expected number of columns: 2, Actual number of columns: 31
+[2025-06-30 14:16:36,372] 39 root - INFO - Expected number of columns: 2, Actual number of columns: 31
+[2025-06-30 14:16:36,517] 30 root - INFO - Data Validation Artifact Created Successfully
+[2025-06-30 14:16:36,517] 35 root - INFO - Starting Data Transformation Pipeline
+[2025-06-30 14:16:36,517] 60 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[2025-06-30 14:16:36,517] 62 root - INFO - Starting data transformation
+[2025-06-30 14:16:36,540] 45 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[2025-06-30 14:16:36,540] 50 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-06-30 14:16:36,555] 66 root - INFO - Entered the save_object method of MainUtils class
+[2025-06-30 14:16:36,561] 70 root - INFO - Exited the save_object method of MainUtils class
+[2025-06-30 14:16:36,561] 66 root - INFO - Entered the save_object method of MainUtils class
+[2025-06-30 14:16:36,564] 70 root - INFO - Exited the save_object method of MainUtils class
+[2025-06-30 14:16:36,564] 37 root - INFO - Data Transformation Artifact Created Successfully
+[2025-06-30 14:16:36,565] 39 root - INFO - Data Transformation Pipeline Completed Successfully
+[2025-06-30 14:16:36,565] 41 root - INFO - Model Trainer Pipeline Started
+[2025-06-30 14:16:36,565] 133 root - INFO - Loading transformed train and test data.
