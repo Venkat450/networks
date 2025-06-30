@@ -20,6 +20,8 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import( RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier)
 import mlflow
 
+import dagshub
+dagshub.init(repo_owner='Venkat450', repo_name='networks', mlflow=True)
 
 
 class ModelTrainer:
@@ -125,6 +127,7 @@ class ModelTrainer:
         
         Network_Model = NetworkModel(preprocessor=preprocessor, model=best_model)
         save_object(self.model_trainer_config.trained_model_file_path, Network_Model)
+        save_object("final_model/model.pkl",best_model)
         
         ## Model Trainer Artifact
         model_trainer_artifact = ModelTrainerArtifact(trained_model_file_path=self.model_trainer_config.trained_model_file_path,

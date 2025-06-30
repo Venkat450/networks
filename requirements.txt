@@ -7,7 +7,11 @@ pymongo[srv]>=4.3.3
 scikit-learn
 dill
 pyyaml
-mlflow
+mlflow==2.3.2
+dagshub
+fastapi
+uvicorn
+python-multipart
 
 
 
