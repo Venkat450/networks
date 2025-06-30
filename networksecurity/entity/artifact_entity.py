@@ -20,3 +20,11 @@ class DataValidationArtifact:
     invalid_test_file_path: str
     drift_report_file_path: str
     
+@dataclass
+class DataTransformationArtifact:
+    """
+    Data Transformation Artifact class to hold the data transformation related artifacts.
+    """
+    transformed_train_file_path: str
+    transformed_test_file_path: str
+    transformed_object_file_path: str
